@@ -23,9 +23,10 @@ export interface View {
 }
 
 export interface Page {
-  pageId: string;
-  pageLabel: string;
-  pageType: string;
+  id: string;
+  label: string;
+  type: string;
+  data?: any;
 }
 
 interface LayoutController {
@@ -191,7 +192,7 @@ export class Plugin {
   openPage(page: Page) {
     let _page = {} as Page;
     _page = Object.assign(_page, page);
-    _page.pageId = `${this.params.pluginId}-${page.pageId}`;
+    _page.id = `${this.params.pluginId}-${page.id}`;
     this.controller.layout.openPage(_page);
   }
 
