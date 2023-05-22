@@ -1,5 +1,11 @@
 # research-helper
 
+## 1.0.2
+
+### Patch Changes
+
+- 1b58226: Updated workflows
+
 ## 1.0.1
 
 ### Patch Changes
