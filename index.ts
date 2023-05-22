@@ -216,7 +216,6 @@ export class Plugin {
    * when values in settings changed
    */
   saveSettings() {
-    console.log("saving");
     this.saveData("pluginSettings.json", JSON.stringify(this.settings));
   }
 
