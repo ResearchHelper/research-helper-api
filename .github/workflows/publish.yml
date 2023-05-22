@@ -7,7 +7,7 @@ on:
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -18,5 +18,7 @@ jobs:
       - run: yarn install --frozen-lockfile
       - name: Create Release Pull Request or Publish
         uses: changesets/action@v1
+        with:
+          publish: yarn run build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
