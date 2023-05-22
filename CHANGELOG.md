@@ -1,5 +1,11 @@
 # research-helper
 
+## 1.0.3
+
+### Patch Changes
+
+- 4b2cc1d: Updated index.d.ts
+
 ## 1.0.2
 
 ### Patch Changes
